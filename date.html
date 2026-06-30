@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unser Date ❤️</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="flowers"></div>
+
+    <div class="card">
+
+        <h1>💕 Unser Date planen 💕</h1>
+
+        <p>
+            Jetzt wird's spannend! ❤️
+        </p>
+
+        <form id="dateForm">
+
+            <div class="inputGroup">
+                <label>📅 Datum</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="inputGroup">
+                <label>🕒 Uhrzeit</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div class="inputGroup">
+                <label>📍 Wohin gehen wir?</label>
+                <input type="text"
+                       id="place"
+                       placeholder="z. B. Italiener 🍝"
+                       required>
+            </div>
+
+            <div class="inputGroup">
+                <label>💬 Noch etwas?</label>
+
+                <textarea id="message"
+                          rows="4"
+                          placeholder="Hier kannst du noch etwas schreiben... ❤️"></textarea>
+            </div>
+
+            <button type="submit" id="yesBtn">
+                ❤️ Date bestätigen
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/date.js"></script>
+
+</body>
+</html>
