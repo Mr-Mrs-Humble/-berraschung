@@ -73,10 +73,7 @@ function xorEncrypt(text, key) {
         result[i] = textBytes[i] ^ keyBytes[i % keyBytes.length];
     }
 
-    let binary = "";
-    result.forEach(byte => binary += String.fromCharCode(byte));
-
-    return btoa(binary);
+    return btoa(String.fromCharCode(...result));
 }
 
 encrypted.value = xorEncrypt(text, "My Short Queen");
